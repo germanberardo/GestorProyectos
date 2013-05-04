@@ -6,8 +6,9 @@ package gestorsoft;
 
 import Estimable.Estimable;
 import Integrante.*;
+import EquipoTrabajo.*;
 import Requerimiento.Requerimiento;
-import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.LinkedList;
 import java.util.List;
 /**
@@ -15,17 +16,31 @@ import java.util.List;
  * @author Fernando, Braian, German
  */
 public class Proyecto implements Estimable{
-    private Date fechaInicio;
-    private Date fechaFin;
-    private List<Integrante> LLEquipoDeTrabajo;
-    private List<Requerimiento> LnkdLstRequerimientos;
-    private int horasTrabajadasEnProyecto; //total de horas trabajados por TODOS los integrantes del proyecto
+
+    public class Proyecto implements Estimable{
+    private String nombre;
+    private GregorianCalendar fechaInicio;
+    private GregorianCalendar fechaFin;
+    private List<EquipoTrabajo> LLEquipoTrabajo;
+    private List<Requerimiento> LLRequerimientos;
+    
     
    public Proyecto(){
-       
+    fechaInicio = new GregorianCalendar();    
+    fechaFin = new GregorianCalendar();
+    LLEquipoTrabajo = new LinkedList<EquipoTrabajo>();
+    LLRequerimientos = new LinkedList<Requerimiento>();
+    
    }
    
-   public Proyecto(Date fechaInicio,Date fechaFin,LinkedList )
+   public Proyecto(String nombre,GregorianCalendar fechaInicio, GregorianCalendar fechaFin,List<EquipoTrabajo> LLEquipoTrabajo, List<Requerimiento> LLRequerimientos ) {
+       this.nombre = nombre;
+       this.fechaInicio = fechaInicio;
+       this.fechaFin = fechaFin;
+       this.LLEquipoTrabajo = LLEquipoTrabajo;
+       this.LLRequerimientos = LLRequerimientos;
+   }
+   
    public int duracionEstimada(){
        
    }
