@@ -17,7 +17,7 @@ public class EquipoTrabajo {
         this.integrante = integrante;
         this.horasDeTrabajo = horasDeTrabajo;
         this.activo = activo;
-    }
+    }  
 
     public Integrante getIntegrante() {
         return integrante;
