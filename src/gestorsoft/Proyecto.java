@@ -12,7 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 /**
  *
- * @author Enterprise
+ * @author Fernando, Braian, German
  */
 public class Proyecto implements Estimable{
     private Date fechaInicio;
