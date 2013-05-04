@@ -14,6 +14,7 @@ public class GestorSoft {
     private List<Proyecto> LLProyectos;
     private Map<String,Integrante> HMIntegrantes;
     
+    
     public void consultaProyecto(){
         
     }
